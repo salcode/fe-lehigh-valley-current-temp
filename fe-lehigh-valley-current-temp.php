@@ -6,6 +6,8 @@
  * Version: 1.0.0
  * Author: Sal Ferrarello
  * Author URI: http://salferrarello.com/
+ * License: Apache-2.0
+ * License URI: https://spdx.org/licenses/Apache-2.0.html
  * Text Domain: fe-lehigh-valley-current-temp
  * Domain Path: /languages
  *
