@@ -84,7 +84,7 @@ function fe_get_lv_temp_f() {
 function fe_get_lv_temp_api_call() {
 	try {
 		$url = sprintf(
-			'https://api.darksky.net/forecast/%s/37.8267,-122.4233',
+			'https://api.darksky.net/forecast/%s/40.612557,-75.371515',
 			FE_DARK_SKY_API // My Secret DarkSky API key set in wp-config.php.
 		);
 		$response = wp_remote_get( $url );

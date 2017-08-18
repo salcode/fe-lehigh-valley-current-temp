@@ -1,6 +1,6 @@
 # Lehigh Valley Current Temp Widget
 
-This plugin uses the [Dark Sky API](https://darksky.net/dev/) to retrieve the current temperature for Lehigh Valley (specifically: lat `37.8267`, lng `-122.4233`).
+This plugin uses the [Dark Sky API](https://darksky.net/dev/) to retrieve the current temperature for Lehigh Valley (specifically: lat `40.612557`, lng `-75.371515`).
 
 ## Project URL
 
