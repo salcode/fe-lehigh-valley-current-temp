@@ -3,7 +3,7 @@
  * Plugin Name: Lehigh Valley Current Temp Widget
  * Plugin URI: https://github.com/salcode/fe-lehigh-valley-current-temp
  * Description: Display the current temp in Lehigh Valley. Using the Dark Sky API and WordPress transients.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Sal Ferrarello
  * Author URI: http://salferrarello.com/
  * License: Apache-2.0
@@ -23,6 +23,7 @@ require_once( 'src/class-fe-lehigh-valley-current-temp-widget.php' );
 
 // Register Fe_Lehigh_Valley_Current_Temp_Widget widget.
 add_action( 'widgets_init', 'register_fe_llctw' );
+register_deactivation_hook( __FILE__, 'fe_llctw_delete_transient' );
 
 /**
  * Register Widget.
@@ -96,4 +97,11 @@ function fe_get_lv_temp_api_call() {
 		return null;
 	}
 	return $temp;
+}
+
+/**
+ * Delete the transient from this plugin.
+ */
+function fe_llctw_delete_transient() {
+    delete_transient( 'fe_lv_temp' );
 }
